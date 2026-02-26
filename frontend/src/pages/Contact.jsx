@@ -17,7 +17,7 @@ function Contact() {
         setStatus({ type: '', msg: '' });
 
         try {
-            const response = await fetch('http://localhost:5000/messages', {
+            const response = await fetch('https://portfolio-backend-labj.onrender.com', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
