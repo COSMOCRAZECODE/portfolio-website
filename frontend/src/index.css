@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #050510;
+  color: #f0f0f0;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #bb86fc 0%, #03dac6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Light Theme Overrides */
+body.light-theme {
+  background-color: #fcfcfc !important;
+  color: #333333 !important;
+}
+
+body.light-theme .text-light,
+body.light-theme .text-white,
+body.light-theme .text-info.opacity-75 {
+  color: #333333 !important;
+  opacity: 1 !important;
+}
+
+body.light-theme h1.text-white {
+  text-shadow: none !important;
+}
+
+body.light-theme .bg-dark {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-bottom: 1px solid #eaeaea;
+}
+
+body.light-theme .navbar-dark .navbar-nav .nav-link {
+  color: #555555;
+  font-weight: 500;
+}
+
+body.light-theme .navbar-dark .navbar-nav .nav-link:hover,
+body.light-theme .navbar-dark .navbar-nav .nav-link.active {
+  color: #111111;
+}
+
+body.light-theme .navbar-brand {
+  color: #111111 !important;
+}
+
+body.light-theme .theme-outline-btn {
+  color: #333333 !important;
+  border-color: #333333 !important;
+}
+
+body.light-theme .theme-outline-btn:hover {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+body.light-theme .text-gradient {
+  background: linear-gradient(90deg, #3f51b5 0%, #009688 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.light-theme .theme-card {
+  background: #ffffff !important;
+  border: 1px solid #eaeaea !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+body.light-theme .border-secondary {
+  border-color: #eaeaea !important;
+}
+
+body.light-theme footer {
+  background-color: #ffffff !important;
+  border-top: 1px solid #eaeaea !important;
+}
+
+body.light-theme .badge.bg-info {
+  background-color: #e0f2f1 !important;
+  color: #00796b !important;
+}
+
+body.light-theme .badge.bg-success {
+  background-color: #e8f5e9 !important;
+  color: #2e7d32 !important;
+}
