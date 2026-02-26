@@ -47,11 +47,19 @@ function Projects() {
                                         cursor: 'pointer',
                                         borderRadius: '15px',
                                         background: 'linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%)',
-                                        border: '1px solid rgba(255,255,255,0.05)',
+                                        border: project.status === "Currently Developing" ? '1px solid rgba(236, 72, 153, 0.4)' : '1px solid rgba(255,255,255,0.05)',
+                                        boxShadow: project.status === "Currently Developing" ? '0 0 20px rgba(236, 72, 153, 0.1)' : '0 4px 15px 0 rgba(0, 0, 0, 0.2)',
                                         backdropFilter: 'blur(5px)',
-                                        boxShadow: '0 4px 15px 0 rgba(0, 0, 0, 0.2)'
+                                        position: 'relative'
                                     }}
                                 >
+                                    {project.status === "Currently Developing" && (
+                                        <div className="position-absolute top-0 end-0 m-3 z-3">
+                                            <Badge bg="danger" className="border border-danger px-3 py-2 rounded-pill shadow" style={{ letterSpacing: '1px' }}>
+                                                <i className="bi bi-tools me-2"></i>Currently Developing
+                                            </Badge>
+                                        </div>
+                                    )}
                                     <div
                                         className="w-100 position-relative"
                                         style={{

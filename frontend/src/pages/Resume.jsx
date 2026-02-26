@@ -19,17 +19,33 @@ function Resume() {
                         Review my full professional history, technical skills, and educational background.
                     </p>
 
-                    <Button
-                        variant="info"
-                        size="lg"
-                        href="/raj_gohel_resume.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-5 py-3 rounded-pill fw-bold shadow-lg"
-                        style={{ letterSpacing: '1px' }}
-                    >
-                        <i className="bi bi-download me-2"></i> Download / View Resume
-                    </Button>
+                    <div className="d-flex flex-column flex-sm-row justify-content-center gap-3 mb-4">
+                        <Button
+                            variant="outline-info"
+                            size="lg"
+                            href="/raj_gohel_resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-5 py-3 rounded-pill fw-bold"
+                            style={{ letterSpacing: '1px', backdropFilter: 'blur(5px)' }}
+                        >
+                            <i className="bi bi-eye me-2"></i> View Resume
+                        </Button>
+                        <Button
+                            variant="info"
+                            size="lg"
+                            href="/raj_gohel_resume.pdf"
+                            download="Raj_Gohel_Resume.pdf"
+                            className="px-5 py-3 rounded-pill fw-bold shadow-lg text-dark"
+                            style={{ letterSpacing: '1px' }}
+                        >
+                            <i className="bi bi-download me-2"></i> Download PDF
+                        </Button>
+                    </div>
+
+                    <p className="text-secondary" style={{ fontSize: '0.9rem', fontStyle: 'italic' }}>
+                        <i className="bi bi-clock-history me-1"></i> Last Updated: February 2026
+                    </p>
                 </div>
             </motion.div>
         </Container>

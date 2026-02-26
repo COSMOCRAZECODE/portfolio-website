@@ -18,6 +18,7 @@ function NavigationBar({ activeTheme, setActiveTheme }) {
                         <Nav.Link as={Link} to="/about" onClick={handleClose}>About</Nav.Link>
                         <Nav.Link as={Link} to="/skills" onClick={handleClose}>Skills</Nav.Link>
                         <Nav.Link as={Link} to="/projects" onClick={handleClose}>Projects</Nav.Link>
+                        <Nav.Link as={Link} to="/notes" onClick={handleClose}>Notes</Nav.Link>
                         <Nav.Link as={Link} to="/learning" onClick={handleClose}>Learning</Nav.Link>
                         <Nav.Link as={Link} to="/certifications" onClick={handleClose}>Certifications</Nav.Link>
                         <Nav.Link as={Link} to="/resume" onClick={handleClose}>Resume</Nav.Link>

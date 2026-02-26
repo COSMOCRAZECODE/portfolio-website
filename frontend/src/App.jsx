@@ -19,6 +19,7 @@ import Certifications from './pages/Certifications';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import Learning from './pages/Learning';
+import Notes from './pages/Notes';
 import WorkInProgress from './pages/WorkInProgress';
 import ProjectDetails from './pages/ProjectDetails';
 function App() {
@@ -45,6 +46,7 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:projectId" element={<ProjectDetails />} />
+          <Route path="/notes" element={<Notes />} />
           <Route path="/certifications" element={<Certifications />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />

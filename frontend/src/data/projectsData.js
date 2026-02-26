@@ -26,5 +26,20 @@ export const projectsData = [
             dataUsed: "Live environmental news from NewsAPI, processed by Google Gemini.",
             problemsFaced: "Integrating multiple external APIs synchronously and keeping the LLM chat responses fast and highly relevant to the provided ESG context."
         }
+    },
+    {
+        id: "yolo-object-detection",
+        title: "YOLO Object Detection (Indian Context)",
+        status: "Currently Developing",
+        description: "Training a custom YOLO (You Only Look Once) model on an independently gathered dataset focusing specifically on Indian street environments, traffic, and context.",
+        techStack: ["Python", "PyTorch", "YOLOv8", "OpenCV"],
+        tryItLink: "/wip",
+        videoPlaceholder: "https://placehold.co/800x450/0a0a14/06b6d4?text=Work+In+Progress",
+        thumbnail: "https://placehold.co/800x450/0a0a14/06b6d4?text=Work+In+Progress", // WIP image
+        details: {
+            problem: "Most pre-trained object detection models are biased towards Western datasets. The goal is to build a robust model trained specifically on the unique chaos, vehicle types, and density of Indian streets.",
+            dataUsed: "A custom proprietary dataset built from scratch, currently being annotated manually.",
+            problemsFaced: "Data collection and precise annotation of dense, overlapping objects (like auto-rickshaws, two-wheelers, and street vendors) is extremely time-consuming and prone to occlusion issues."
+        }
     }
 ];

@@ -8,7 +8,7 @@ function Learning() {
             title: "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
             author: "Aurélien Géron",
             status: "Reading",
-            pagesRead: 200,
+            pagesRead: 30,
             totalPages: 856,
             thumbnail: "https://learning.oreilly.com/library/cover/9781098125967/250w/"
         }
@@ -20,40 +20,40 @@ function Learning() {
             title: "The Web Developer Bootcamp 2026",
             provider: "Udemy",
             status: "Doing",
-            modulesCompleted: 50,
-            totalModules: 100,
+            modulesCompleted: 11,
+            totalModules: 74,
             thumbnail: "https://img-c.udemycdn.com/course/480x270/625204_436a_3.jpg"
         },
         {
             title: "Generative AI Course With Langchain and Huggingface",
             provider: "Udemy",
             status: "Doing",
-            modulesCompleted: 20,
-            totalModules: 100,
+            modulesCompleted: 3,
+            totalModules: 52,
             thumbnail: "https://img-c.udemycdn.com/course/480x270/6010764_b4b1_8.jpg"
         },
         {
             title: "Complete Data Science, Machine Learning, DL, NLP Bootcamp",
             provider: "Udemy",
             status: "Doing",
-            modulesCompleted: 15,
-            totalModules: 100,
+            modulesCompleted: 5,
+            totalModules: 63,
             thumbnail: "https://img-c.udemycdn.com/course/480x270/5993822_2c2a_7.jpg"
         },
         {
             title: "Python Data Structures & Algorithms + LEETCODE",
             provider: "Udemy",
             status: "Doing",
-            modulesCompleted: 10,
-            totalModules: 100,
+            modulesCompleted: 5,
+            totalModules: 41,
             thumbnail: "https://img-c.udemycdn.com/course/480x270/4094340_0609_17.jpg"
         },
         {
             title: "Complete Computer Vision Bootcamp With PyTorch & TF",
             provider: "Udemy",
             status: "Doing",
-            modulesCompleted: 5,
-            totalModules: 100,
+            modulesCompleted: 2,
+            totalModules: 12,
             thumbnail: "https://img-c.udemycdn.com/course/480x270/6278133_3630.jpg"
         }
     ];
