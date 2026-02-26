@@ -28,6 +28,9 @@ function NavigationBar({ activeTheme, setActiveTheme }) {
                             <NavDropdown.Item onClick={() => { setActiveTheme('starfield'); handleClose(); }} active={activeTheme === 'starfield'}>Starfield (Space)</NavDropdown.Item>
                             <NavDropdown.Item onClick={() => { setActiveTheme('minimalist'); handleClose(); }} active={activeTheme === 'minimalist'}>Minimalist (Clean)</NavDropdown.Item>
                             <NavDropdown.Item onClick={() => { setActiveTheme('quantum'); handleClose(); }} active={activeTheme === 'quantum'}>Quantum (Cyber)</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item onClick={() => { setActiveTheme('synthwave'); handleClose(); }} active={activeTheme === 'synthwave'}>Synthwave (80s)</NavDropdown.Item>
+                            <NavDropdown.Item onClick={() => { setActiveTheme('neuralnet'); handleClose(); }} active={activeTheme === 'neuralnet'}>Neural Net (AI)</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

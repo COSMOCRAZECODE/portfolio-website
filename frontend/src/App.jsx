@@ -7,6 +7,8 @@ import './index.css';
 import SpaceBackground from './components/SpaceBackground';
 import MinimalistBackground from './components/MinimalistBackground';
 import QuantumCore from './components/QuantumCore';
+import SynthwaveBackground from './components/SynthwaveBackground';
+import NeuralNetBackground from './components/NeuralNetBackground';
 import NavigationBar from './components/NavigationBar';
 import Footer from './components/Footer';
 
@@ -38,6 +40,8 @@ function App() {
       {activeTheme === 'starfield' && <SpaceBackground />}
       {activeTheme === 'minimalist' && <MinimalistBackground />}
       {activeTheme === 'quantum' && <QuantumCore />}
+      {activeTheme === 'synthwave' && <SynthwaveBackground />}
+      {activeTheme === 'neuralnet' && <NeuralNetBackground />}
       <NavigationBar activeTheme={activeTheme} setActiveTheme={setActiveTheme} />
       <div className="content-wrapper d-flex flex-column min-vh-100">
         <Routes>
