@@ -44,7 +44,7 @@ function ProjectDetails() {
                 </div>
 
                 {/* Video / Placeholder Section */}
-                <div className="mb-5 position-relative rounded-4 overflow-hidden" style={{ width: '100%', paddingTop: '56.25%', background: '#000', border: '1px solid rgba(255,255,255,0.1)' }}>
+                <div className="mb-5 mx-auto position-relative rounded-4 overflow-hidden d-flex align-items-center justify-content-center" style={{ width: '100%', maxWidth: '900px', aspectRatio: '16/9', background: '#000', border: '1px solid rgba(255,255,255,0.1)' }}>
                     {project.videoUrl ? (
                         <iframe
                             src={project.videoUrl}
