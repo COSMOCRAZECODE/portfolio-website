@@ -24,7 +24,7 @@ function Certifications() {
             issuer: "Andrew Ng, Coursera",
             date: "2024",
             description: "Implemented k-means, PCA, recommender systems, and reinforcement learning.",
-            link: "/certificates/unsupervised-ml.pdf",
+            link: "/wip", // Placeholder for ongoing course
             thumbnail: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80"
         },
         {
@@ -32,7 +32,7 @@ function Certifications() {
             issuer: "Andrew Ng, Coursera",
             date: "2024",
             description: "Studied the foundational concepts of neural networks and deep learning.",
-            link: "/certificates/nerual-networks.pdf", // Matches user's file typo
+            link: "/certificates/neural-networks.pdf",
             thumbnail: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&q=80"
         },
         {

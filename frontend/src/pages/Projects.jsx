@@ -1,24 +1,9 @@
 import { Container, Row, Col, Card, Badge, Button } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { projectsData } from '../data/projectsData';
 
 function Projects() {
-    const projects = [
-        {
-            title: "Stock Market Price Prediction Website",
-            description: "Developed using Streamlit and an LSTM model for Indian stock data via yfinance. Integrated Flask-based user authentication and designed a UI for visualizations.",
-            techStack: ["Python", "Streamlit", "Flask", "SQLite3", "LSTM"],
-            link: "#",
-            thumbnail: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80" // Stock market chart
-        },
-        {
-            title: "Climate Change Tracker (UN SDG 13)",
-            description: "Built a web-based ESG footprint tracker as Team Lead during an AI internship. Integrated NewsAPI and Google Gemini for chat and article summaries.",
-            techStack: ["Python", "Streamlit", "Gemini API", "NewsAPI"],
-            link: "#",
-            thumbnail: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&q=80" // Climate/Earth
-        }
-    ];
-
     const containerVariants = {
         hidden: { opacity: 0 },
         show: {
@@ -51,12 +36,15 @@ function Projects() {
                 viewport={{ once: true, margin: "-100px" }}
             >
                 <Row>
-                    {projects.map((project, index) => (
+                    {projectsData.map((project, index) => (
                         <Col lg={4} md={6} className="mb-4" key={index}>
                             <motion.div variants={itemVariants} className="h-100">
                                 <Card
-                                    className="bg-transparent text-light h-100 project-card"
+                                    as={Link}
+                                    to={`/projects/${project.id}`}
+                                    className="bg-transparent text-light h-100 project-card text-decoration-none"
                                     style={{
+                                        cursor: 'pointer',
                                         borderRadius: '15px',
                                         background: 'linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%)',
                                         border: '1px solid rgba(255,255,255,0.05)',
@@ -90,6 +78,12 @@ function Projects() {
                                                     {tech}
                                                 </Badge>
                                             ))}
+                                        </div>
+
+                                        <div className="mt-auto pt-3 border-top" style={{ borderColor: 'rgba(255,255,255,0.05) !important' }}>
+                                            <span className="text-info text-uppercase" style={{ fontSize: '0.8rem', letterSpacing: '1px', fontWeight: 'bold' }}>
+                                                View Details <i className="bi bi-arrow-right ms-1"></i>
+                                            </span>
                                         </div>
                                     </Card.Body>
                                 </Card>

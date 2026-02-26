@@ -19,7 +19,8 @@ import Certifications from './pages/Certifications';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import Learning from './pages/Learning';
-
+import WorkInProgress from './pages/WorkInProgress';
+import ProjectDetails from './pages/ProjectDetails';
 function App() {
   const [activeTheme, setActiveTheme] = useState('starfield');
 
@@ -43,10 +44,12 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:projectId" element={<ProjectDetails />} />
           <Route path="/certifications" element={<Certifications />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/learning" element={<Learning />} />
+          <Route path="/wip" element={<WorkInProgress />} />
         </Routes>
         <Footer />
       </div>
