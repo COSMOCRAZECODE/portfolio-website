@@ -9,7 +9,7 @@ function Home() {
             {/* Decorative blurred orbit lines for space effect */}
             <div style={{
                 position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
-                width: '600px', height: '600px', borderRadius: '50%', border: '1px solid rgba(187, 134, 252, 0.1)',
+                width: 'min(600px, 100vw)', height: 'min(600px, 100vw)', borderRadius: '50%', border: '1px solid rgba(187, 134, 252, 0.1)',
                 boxShadow: '0 0 100px rgba(187, 134, 252, 0.05)', zIndex: -1
             }}></div>
 
@@ -58,12 +58,12 @@ function Home() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 1.2, duration: 0.8 }}
-                            className="d-flex justify-content-center gap-4"
+                            className="d-flex flex-column flex-sm-row justify-content-center gap-3 gap-sm-4 px-3 px-sm-0"
                         >
-                            <Button as={Link} to="/projects" variant="outline-info" size="lg" className="px-5 rounded-pill" style={{ backdropFilter: 'blur(5px)' }}>
+                            <Button as={Link} to="/projects" variant="outline-info" size="lg" className="px-4 px-sm-5 rounded-pill" style={{ backdropFilter: 'blur(5px)' }}>
                                 Initialize Projects
                             </Button>
-                            <Button as={Link} to="/contact" variant="outline-light" size="lg" className="px-5 rounded-pill opacity-75 theme-outline-btn">
+                            <Button as={Link} to="/contact" variant="outline-light" size="lg" className="px-4 px-sm-5 rounded-pill opacity-75 theme-outline-btn">
                                 Establish Contact
                             </Button>
                         </motion.div>
